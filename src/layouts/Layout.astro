@@ -1,7 +1,6 @@
 ---
 // Component Imports
 import '../styles/global.css';
-import Counter from '../components/Counter';
 import { SendToAttractScreen } from '../components/SendToAttractScreen';
 interface Props {
     title: string
@@ -12,7 +11,7 @@ const { title } = Astro.props
 
 
 ---
-<html lang="en">
+<html lang="en" title={title}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
