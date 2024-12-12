@@ -10,4 +10,6 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   output: "server",
   adapter: vercel(),
+  // output: 'static',
+  // By default we're building a serverless vercel for publish to preview, however by commenting out the adapter we can build a static site that we would use locally or deploy to a static host like Netlify.
 });
