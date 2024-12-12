@@ -11,3 +11,5 @@ npm create astro@latest -- --template framework-react
 This example showcases Astro working with [React](https://react.dev).
 
 Write your React components as `.jsx` or `.tsx` files in your project.
+
+# palo-pinto-carousel
