@@ -1,15 +1,16 @@
-# Astro + React Example
+# Project Setup
 
-```sh
-npm create astro@latest -- --template framework-react
+This project requires `git lfs` to be installed. If you don't have it installed, you can install it by following the instructions [here](https://git-lfs.github.com/). and Vercel to be [configured](https://vercel.com/docs/projects/overview#git-large-file-storage-lfs) to support it.
+
+## Building
+
+By default this builds a static site to the `/dist` directory than can be served with `nginx` using the sample `nginx.conf` or by using the `serve -s dist` command.
+
+```bash
+npm run build
+serve -s dist
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/framework-react/devcontainer.json)
+## Deploying to Vercel
 
-This example showcases Astro working with [React](https://react.dev).
-
-Write your React components as `.jsx` or `.tsx` files in your project.
-
-# palo-pinto-carousel
+If you want to automatically deploy to Vercel instead on push to main, you can comment in the lines of the `astro.config.mjs` file related to vercel, or overwrite the `astro.config.mjs` file with the `astro.config.vercel.mjs` file.
