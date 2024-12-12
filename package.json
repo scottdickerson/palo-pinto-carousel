@@ -4,9 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "start": "astro dev",
+    "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format:fix": "prettier --write .",
+    "production": "serve -l 3000 dist",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/react": "^4.1.0",
@@ -19,6 +23,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.4",
     "autoprefixer": "^10.4.20",
     "husky": "^9.1.7",
     "postcss": "^8.4.49",
