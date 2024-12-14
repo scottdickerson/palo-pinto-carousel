@@ -10,7 +10,7 @@ export const SendToAttractScreen = ({
     const createTimer = () =>
         setTimeout(() => {
             if (typeof window !== 'undefined') window.location.href = '/'
-        }, timeoutInMs ?? 65000)
+        }, timeoutInMs)
 
     let redirectTimer = createTimer()
 

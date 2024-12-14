@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { InteractiveCarousel } from '@/components/InteractiveCarousel'
+import { SupportedLanguages, topicData, type Topics } from '@/data/contentData'
+
+const { topic, language } = Astro.params as {
+    topic: Topics
+    language: SupportedLanguages
+}
+
+export const getStaticPaths = () => {
+    return topicData.flatMap(({ topic }) =>
+        Object.values(SupportedLanguages).map((language) => ({
+            params: { topic, language },
+        }))
+    )
+}
+---
+
+<Layout title="Topic Details">
+    <InteractiveCarousel
+        topic={topic}
+        language={language}
+        captions={topicData.find(({ topic: eachTopic }) => topic === eachTopic)
+            ?.captions}
+        client:visible
+    />
+</Layout>
