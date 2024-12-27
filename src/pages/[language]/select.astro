@@ -2,6 +2,7 @@
 import { SupportedLanguages } from '@/data/contentData'
 import DetailLayout from '@/layouts/DetailLayout.astro'
 import Layout from '@/layouts/Layout.astro'
+import { select, topicData } from '@/data/contentData'
 
 const { language } = Astro.params
 
@@ -13,19 +14,60 @@ export const getStaticPaths = () =>
 
 <Layout title="Select Topic">
     <DetailLayout>
-        <nav>
-            <ul>
-                <li>
-                    <a href={`/${language}/details/RanchingAndReservoir`}>
-                        Ranching and Reservoir
-                    </a>
-                </li>
-                <li>
-                    <a href={`/${language}/details/HomeForMillenia`}>
-                        HomeForMillenia</a
-                    >
-                </li>
-            </ul>
-        </nav>
+        <div class="flex flex-col items-center gap-[50px]">
+            <h1
+                class="font-calderDarkGritShadow text-[44px] uppercase text-center w-[1180px] pt-[223px]"
+            >
+                {select[language]}
+            </h1>
+            <nav>
+                <ul class="flex gap-16">
+                    <li>
+                        <a
+                            class="flex flex-col gap-6 items-center"
+                            href={`/${language}/details/HomeForMillenia`}
+                        >
+                            <h2
+                                class="text-[35px] uppercase font-calderGritShadow text-center whitespace-nowrap"
+                            >
+                                {
+                                    topicData.find(
+                                        ({ topic }) =>
+                                            topic === 'HomeForMillenia'
+                                    )?.title[language] ?? ''
+                                }
+                            </h2>
+                            <img
+                                class="w-[412px]"
+                                src="/Carousel_HomeForMillenia1.png"
+                                alt="Wichita grass house"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="flex flex-col gap-6 items-center"
+                            href={`/${language}/details/RanchingAndReservoir`}
+                        >
+                            <h2
+                                class="text-[35px] uppercase font-calderGritShadow text-center whitespace-nowrap"
+                            >
+                                {
+                                    topicData.find(
+                                        ({ topic }) =>
+                                            topic === 'RanchingAndReservoir'
+                                    )?.title[language] ?? ''
+                                }
+                            </h2>
+                            <img
+                                class="w-[412px]"
+                                src="/Carousel_RanchingAndReservoir1.png"
+                                alt="Cowboys on a cattle drive"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </DetailLayout>
 </Layout>

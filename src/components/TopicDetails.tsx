@@ -6,10 +6,17 @@ export interface TopicDetailsProps {
      * description will contain html characters
      */
     description?: string
+    className?: string
 }
-export const TopicDetails = ({ title, description }: TopicDetailsProps) => {
+export const TopicDetails = ({
+    title,
+    description,
+    className,
+}: TopicDetailsProps) => {
     return (
-        <div className="flex flex-col items-start gap-4 w-[626px]">
+        <div
+            className={`flex flex-col items-start gap-4 w-[626px] ${className}`}
+        >
             <h1 className="text-[40px] text-center font-calderDarkGritShadow">
                 {title}
             </h1>

@@ -64,6 +64,8 @@
         @apply bg-background text-foreground;
         color: white;
         user-select: none;
+        max-width: 1920px;
+        max-height: 1080px;
     }
 }
 
@@ -80,6 +82,10 @@
 @font-face {
     font-family: 'Calder-Shadow';
     src: url('/fonts/Calder-Shadow.woff2') format('woff');
+}
+@font-face {
+    font-family: 'Calder-Grit-Shadow';
+    src: url('/fonts/Calder-GritShadow.woff2') format('woff');
 }
 
 @layer utilities {

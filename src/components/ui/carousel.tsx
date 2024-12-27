@@ -200,7 +200,7 @@ const CarouselPrevious = React.forwardRef<
     return (
         <button
             ref={ref}
-            className={`h-10 w-5 absolute -left-12 top-1/2 -translate-y-1/2 ${className} hover:fill-white`}
+            className={`h-12 absolute -left-20 top-[37%] -translate-y-1/2 ${className} hover:fill-white`}
             disabled={!canScrollPrev}
             onClick={scrollPrev}
             {...props}
@@ -220,7 +220,7 @@ const CarouselNext = React.forwardRef<
     return (
         <button
             ref={ref}
-            className={`h-10 w-5 absolute -right-12 top-1/2 -translate-y-1/2 ${className}`}
+            className={`h-12  absolute -right-20 top-[37%] -translate-y-1/2 ${className}`}
             disabled={!canScrollNext}
             onClick={scrollNext}
             {...props}

@@ -14,6 +14,7 @@ export default {
                 calderLc: ['Calder-LC'],
                 calderDarkGritShadow: ['Calder-Dark-Grit-Shadow'],
                 calderShadow: ['Calder-Shadow'],
+                calderGritShadow: ['Calder-Grit-Shadow'],
             },
             borderRadius: {
                 lg: 'var(--radius)',

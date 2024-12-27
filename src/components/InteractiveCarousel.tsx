@@ -22,14 +22,18 @@ export const InteractiveCarousel = ({
             className="w-[720px] relative left-shading shading right-shading"
             opts={{ loop: true }}
         >
-            <CarouselContent className="text-center -ml-10 ">
+            <CarouselContent className="text-center">
                 {Array.from({ length: captions?.length ?? 0 }).map((_, i) => (
-                    <CarouselItem className="max-w-[568px]  pl-10" key={i}>
+                    <CarouselItem
+                        className="pl-9 flex flex-col items-center min-w-[600px] basis-1/2"
+                        key={i}
+                    >
                         <img
+                            className="max-w-[580px]"
                             src={`/Carousel_${topic}${i + 1}.png`}
                             alt={captions?.[i][language]}
                         />
-                        <h1 className="text-white font-calderLc pt-5">
+                        <h1 className="text-white font-calderLc text-[20px] pt-5">
                             {captions?.[i][language]}
                         </h1>
                     </CarouselItem>
