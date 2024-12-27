@@ -1,7 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import { InteractiveCarousel } from '@/components/InteractiveCarousel'
+import { TopicDetails } from '@/components/TopicDetails'
 import { SupportedLanguages, topicData, type Topics } from '@/data/contentData'
+import DetailLayout from '@/layouts/DetailLayout.astro'
 
 const { topic, language } = Astro.params as {
     topic: Topics
@@ -15,14 +17,26 @@ export const getStaticPaths = () => {
         }))
     )
 }
+
+const thisTopic = topicData.find(({ topic: eachTopic }) => topic === eachTopic)
 ---
 
 <Layout title="Topic Details">
-    <InteractiveCarousel
-        topic={topic}
-        language={language}
-        captions={topicData.find(({ topic: eachTopic }) => topic === eachTopic)
-            ?.captions}
-        client:visible
-    />
+    <DetailLayout>
+        <div class="flex gap-28">
+            <InteractiveCarousel
+                topic={topic}
+                language={language}
+                captions={thisTopic?.captions}
+                client:only
+                ><div class="w-[720px]" slot="fallback">
+                </div></InteractiveCarousel
+            >
+            <TopicDetails
+                title={thisTopic?.title}
+                description={thisTopic?.description}
+                client:only
+            />
+        </div>
+    </DetailLayout>
 </Layout>

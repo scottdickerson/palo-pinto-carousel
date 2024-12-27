@@ -71,3 +71,28 @@
     font-family: 'Calder-LC';
     src: url('/fonts/Calder-LC.woff2') format('woff');
 }
+
+@font-face {
+    font-family: 'Calder-Dark-Grit-Shadow';
+    src: url('/fonts/Calder-DarkGritShadow.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'Calder-Shadow';
+    src: url('/fonts/Calder-Shadow.woff2') format('woff');
+}
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 14px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: var(--muted);
+        border-radius: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #4a4a4a;
+        border-radius: 10px;
+        border: 3px solid var(--muted);
+    }
+}

@@ -12,6 +12,9 @@ export default defineConfig({
             applyBaseStyles: false,
         }),
     ],
+    experimental: {
+        svg: true,
+    },
     output: 'static',
     // By default we're building a static site generation for building local html files that can be served with nginx however by copying the astro.config.vercel.serverless.mjs file to astro.config.mjs we can change the output to serverless.
 })

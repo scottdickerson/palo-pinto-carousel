@@ -1,15 +1,13 @@
 export const PullScreen = () => {
     return (
-        <div className="flex flex-col w-[50%] gap-4">
-            <a
-                className="h-full w-full"
-                href={'/en/details/RanchingAndReservoir'}
-            >
-                Ranching and Reservoir
-            </a>
-            <a className="h-full w-full" href={'/en/details/HomeForMillenia'}>
-                HomeForMillenia
-            </a>
-        </div>
+        <a
+            href="/en/select"
+            className="flex flex-col items-center justify-center h-screen w-screen font-calderShadow"
+        >
+            <h1 className="uppercase  text-[128px]">Touch To Begin</h1>
+            <div className="text-center text-[44px] w-[800px] h-20 pt-1  gap-4 bg-title bg-no-repeat bg-cover">
+                Lorem Ipsum Dolor Dus
+            </div>
+        </a>
     )
 }

@@ -1,0 +1,13 @@
+---
+import { Footer } from '@/components/Footer'
+import type { SupportedLanguages } from '@/data/contentData'
+
+const { language } = Astro.params as {
+    language: SupportedLanguages
+}
+---
+
+<>
+    <slot />
+    <Footer language={language} client:visible />
+</>

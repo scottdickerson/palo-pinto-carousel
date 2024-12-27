@@ -22,13 +22,12 @@ const { title } = Astro.props
                 font-family: system-ui;
                 margin: 0;
             }
-            body {
-                padding: 2rem;
-            }
         </style>
     </head>
     <body>
-        <main class="w-svh h-svh flex items-center justify-center bg-main">
+        <main
+            class="w-svh h-svh flex flex-col items-center justify-center bg-main"
+        >
             <SendToAttractScreen />
             <slot />
         </main>

@@ -7,9 +7,13 @@ export default {
                 main: "url('/background.svg')",
                 nextArrow: "url('/NextArrow.svg')",
                 previousArrow: "url('/PreviousArrow.svg')",
+                title: "url('/titleBackground.svg')",
+                languageButton: "url('/LanguageButton.svg')",
             },
             fontFamily: {
                 calderLc: ['Calder-LC'],
+                calderDarkGritShadow: ['Calder-Dark-Grit-Shadow'],
+                calderShadow: ['Calder-Shadow'],
             },
             borderRadius: {
                 lg: 'var(--radius)',

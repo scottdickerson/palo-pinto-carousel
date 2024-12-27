@@ -1,7 +1,7 @@
 .left-shading .overflow-hidden::before {
     content: ' ';
     background-color: transparent;
-    box-shadow: inset 125px 0px 20px -100px rgb(0 0 0 / 100%);
+    box-shadow: inset 125px 0px 40px -100px rgb(0 0 0 / 100%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -18,20 +18,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    box-shadow: inset -125px 0px 20px -100px rgb(0 0 0 / 100%);
+    box-shadow: inset -125px 0px 40px -100px rgb(0 0 0 / 100%);
 }
 
 .shading {
     position: relative;
-}
-
-.bg-previousArrow,
-.bg-nextArrow {
-    > svg {
-        display: none;
-    }
-}
-.bg-previousArrow:hover,
-.bg-nextArrow:hover {
-    background-color: transparent;
 }

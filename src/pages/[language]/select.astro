@@ -1,0 +1,34 @@
+---
+import { SupportedLanguages } from '@/data/contentData'
+import DetailLayout from '@/layouts/DetailLayout.astro'
+import Layout from '@/layouts/Layout.astro'
+
+const { language } = Astro.params
+
+export const getStaticPaths = () =>
+    Object.values(SupportedLanguages).map((language) => ({
+        params: { language },
+    }))
+---
+
+<Layout title="Select Topic">
+    <DetailLayout>
+        <nav>
+            <ul>
+                <li>
+                    <a
+                        class="h-full w-full"
+                        href="/en/details/RanchingAndReservoir"
+                    >
+                        Ranching and Reservoir
+                    </a>
+                </li>
+                <li>
+                    <a class="h-full w-full" href="/en/details/HomeForMillenia">
+                        HomeForMillenia
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </DetailLayout>
+</Layout>
