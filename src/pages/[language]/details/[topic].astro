@@ -28,6 +28,7 @@ const thisTopic = topicData.find(({ topic: eachTopic }) => topic === eachTopic)
                 topic={topic}
                 language={language}
                 captions={thisTopic?.captions}
+                images={thisTopic?.images ?? []}
                 client:only
                 ><div class="w-[720px]" slot="fallback">
                 </div></InteractiveCarousel

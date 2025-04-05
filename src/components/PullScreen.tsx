@@ -1,7 +1,7 @@
 export const PullScreen = () => {
     return (
         <a
-            href="/en/select"
+            href="/en/details/HomeForMillenia"
             className="flex flex-col items-center justify-center h-screen w-screen font-calderShadow"
         >
             <h1 className="uppercase  text-[128px]">Touch To Begin</h1>

@@ -13,8 +13,8 @@ export interface InteractiveCarouselProps extends Partial<TopicDatum> {
 }
 
 export const InteractiveCarousel = ({
-    topic,
     captions,
+    images,
     language,
 }: InteractiveCarouselProps) => {
     return (
@@ -29,8 +29,8 @@ export const InteractiveCarousel = ({
                         key={i}
                     >
                         <img
-                            className="max-w-[580px]"
-                            src={`/Carousel_${topic}${i + 1}.png`}
+                            className="max-w-[580px] max-h-[400px]"
+                            src={images?.[i]}
                             alt={captions?.[i][language]}
                         />
                         <h1 className="text-white font-calderLc text-[20px] pt-5">
