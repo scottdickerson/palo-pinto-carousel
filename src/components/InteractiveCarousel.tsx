@@ -23,21 +23,29 @@ export const InteractiveCarousel = ({
             opts={{ loop: true }}
         >
             <CarouselContent className="text-center">
-                {Array.from({ length: captions?.length ?? 0 }).map((_, i) => (
-                    <CarouselItem
-                        className="pl-9 flex flex-col items-center min-w-[600px] basis-1/2"
-                        key={i}
-                    >
-                        <img
-                            className="max-w-[580px] max-h-[400px]"
-                            src={images?.[i]}
-                            alt={captions?.[i][language]}
-                        />
-                        <h1 className="text-white font-calderLc text-[20px] pt-5">
-                            {captions?.[i][language]}
-                        </h1>
-                    </CarouselItem>
-                ))}
+                {Array.from({ length: captions?.length ?? 0 }).map((_, i) => {
+                    const [caption, source] = captions?.[i][language].split(
+                        '•'
+                    ) ?? ['', ''] // Fallback to empty string if captions is undefined
+                    return (
+                        <CarouselItem
+                            className="pl-9 flex flex-col items-center min-w-[600px] basis-1/2"
+                            key={i}
+                        >
+                            <img
+                                className="max-w-[580px] max-h-[400px]"
+                                src={images?.[i]}
+                                alt={caption}
+                            />
+                            <cite className="text-white font-calderLc text-[15px] pt-2">
+                                {source}
+                            </cite>
+                            <h1 className="text-white font-calderLc text-[20px] pt-4">
+                                {caption}
+                            </h1>
+                        </CarouselItem>
+                    )
+                })}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
