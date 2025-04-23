@@ -3,12 +3,23 @@ export default {
     content: ['./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}'],
     theme: {
         extend: {
+            keyframes: {
+                scale: {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.05)' },
+                },
+            },
+            animation: {
+                scale: 'scale 3s ease-in-out infinite',
+            },
             backgroundImage: {
                 main: "url('/background.svg')",
                 nextArrow: "url('/NextArrow.svg')",
                 previousArrow: "url('/PreviousArrow.svg')",
                 title: "url('/titleBackground.svg')",
                 languageButton: "url('/LanguageButton.svg')",
+                pullScreen: "url('/PullScreen.webp')",
+                pullScreenStatic: "url('/PullScreen.svg')",
             },
             fontFamily: {
                 calderLc: ['Calder-LC'],

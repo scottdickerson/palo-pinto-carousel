@@ -200,12 +200,16 @@ const CarouselPrevious = React.forwardRef<
     return (
         <button
             ref={ref}
-            className={`h-12 absolute -left-20 top-[37%] -translate-y-1/2 ${className} hover:fill-white`}
+            className={`h-40 absolute w-10 flex justify-center -left-20 top-[37%] ${className} hover:fill-white`}
             disabled={!canScrollPrev}
             onClick={scrollPrev}
             {...props}
         >
-            <img src="/PreviousArrow.svg" alt="Previous slide" />
+            <img
+                className="max-w-8"
+                src="/PreviousArrow.svg"
+                alt="Previous slide"
+            />
         </button>
     )
 })
@@ -220,12 +224,12 @@ const CarouselNext = React.forwardRef<
     return (
         <button
             ref={ref}
-            className={`h-12  absolute -right-20 top-[37%] -translate-y-1/2 ${className}`}
+            className={`h-40 w-10 flex justify-center absolute -right-20 top-[37%] ${className}  hover:fill-white`}
             disabled={!canScrollNext}
             onClick={scrollNext}
             {...props}
         >
-            <img src="/NextArrow.svg" alt="Next slide" />
+            <img className="max-w-8" src="/NextArrow.svg" alt="Next slide" />
         </button>
     )
 })
