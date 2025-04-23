@@ -21,7 +21,7 @@ export const Footer = ({ language }: FooterProps) => {
                     onClick={() => {
                         window.history.back()
                     }}
-                    className="text-lg font-bold pl-2"
+                    className="text-lg font-bold pl-2 pt-8"
                 >
                     <img
                         src="/BackButton.svg"

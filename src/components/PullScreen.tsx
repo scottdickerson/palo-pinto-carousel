@@ -7,9 +7,16 @@ export const PullScreen = () => {
             <h1 className="uppercase text-[128px] animate-scale">
                 Touch To Begin
             </h1>
-            <div className="text-center text-[44px] h-20 pt-1 pl-10 pr-10 gap-4 min-w-[800px] bg-title bg-no-repeat bg-cover">
+            <button
+                onClick={(event) => {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    window.location.href = '/es/details/HomeForMillenia'
+                }}
+                className="text-center text-[44px] h-20 pt-1 pl-10 pr-10 gap-4 min-w-[800px] bg-title bg-no-repeat bg-cover"
+            >
                 Toque Para Iniciar
-            </div>
+            </button>
         </a>
     )
 }
