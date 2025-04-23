@@ -19,7 +19,7 @@ export const InteractiveCarousel = ({
 }: InteractiveCarouselProps) => {
     return (
         <Carousel
-            className="w-[720px] relative left-shading shading right-shading bg-main"
+            className="w-[720px] relative left-shading shading right-shading"
             opts={{ loop: true }}
         >
             <CarouselContent className="text-center">
