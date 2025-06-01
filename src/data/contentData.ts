@@ -38,7 +38,7 @@ export const topicData: TopicDatum[] = [
             },
             {
                 en: 'People lived nomadic existences here at the edge of the Great Plains, leaving objects behind as they roamed. Archeological evidence from areas like the Gault site, pictured above, tells us that people occupied central Texas about 16,000 to 20,000 years ago. • Jillabus',
-                es: 'Los nómades que vivían aquí, bordeando las Grandes Llanuras, abandonaban algunos objetos a medida que cambiaban de lugar. Las evidencias arqueológicas de zonas como el yacimiento de Gault, que puede ver en la imagen de arriba, nos indican que el ser humano ocupa el centro de Texas desde hace 16,000 a 20,000 años.  • Jillabus',
+                es: 'Los nómades que vivían aquí, bordeando las<br/> Grandes Llanuras, abandonaban algunos objetos a medida que cambiaban de lugar. Las evidencias arqueológicas de zonas como el yacimiento de Gault, que puede ver en la imagen de arriba, nos indican que el ser humano ocupa el centro de Texas desde hace 16,000 a 20,000 años.  • Jillabus',
             },
             {
                 en: 'The first people to inhabit this land were active participants in its ecology. Nomadic tribes like the Comanche and Plains Apache hunted bison and other big game. They used fire and the landscape’s natural features to drive herds into better areas for hunting. • Smithsonian American Art Museum',
@@ -58,11 +58,11 @@ export const topicData: TopicDatum[] = [
             },
             {
                 en: 'The Texas and Pacific Railway crosses through the park. Its completion in 1880 forever altered the landscape.  Local coal could now be exported, and a brief economic boom followed. Whistles echoed between the hills and steam billowed upwards as trains transported goods between distant Texas towns. •  Boyce Ditto Public Library ',
-                es: 'La construcción del ferrocarril Texas and Pacific, que atraviesa el parque, culminó en 1880 y modificó el paisaje para siempre.  Desde entonces, permitió la exportación del carbón local, lo que provocó un breve auge económico. Los silbatos resonaban entre las colinas y el vapor se elevaba al paso de los trenes que transportaban mercancías entre pueblos distantes de Texas. • Boyce Ditto Public Library',
+                es: 'La construcción del ferrocarril Texas and Pacific, que atraviesa el parque, culminó en 1880 y modificó el paisaje para siempre.  Desde entonces, permitió la exportación del carbón local, lo que provocó un breve auge económico. Los silbatos resonaban entre las colinas y el vapor se elevaba al paso de los trenes<br/> que transportaban mercancías entre pueblos distantes de Texas. • Boyce Ditto Public Library',
             },
             {
                 en: 'The town of Gordon, 11 miles east of the park, is seen here circa 1905. A pair of railroad tracks spans the photo. Some towns, like Gordon, remained long after the railway was finished. Others, like Wiles Siding, are now ghost towns only remembered through photographs and stories. • Palo Pinto County Historical Association',
-                es: 'El pueblo de Gordon, a 11 millas (18 km) al este del parque, se muestra en esta imagen tomada alrededor de 1905. Un par de vías férreas cruzan la foto. Algunos pueblos, como Gordon, siguieron en pie mucho tiempo después de la construcción del ferrocarril. Otros, como Wiles Siding, ahora son pueblos fantasmas que quedaron en el recuerdo a través de fotografías e historias. • Palo Pinto County Historical Association',
+                es: 'El pueblo de Gordon, a 11 millas (18 km) al este del parque, se muestra en esta imagen tomada alrededor de 1905. Un par de vías férreas cruzan la foto. <br/>Algunos pueblos, como Gordon, siguieron en pie mucho tiempo después de la construcción del ferrocarril. Otros, como Wiles Siding, ahora son pueblos fantasmas que quedaron en el recuerdo a través de fotografías e historias. • Palo Pinto County Historical Association',
             },
             {
                 en: 'Until the mid-1900s, most of the land that’s now the park was owned by absentee landlords or ranchers. Shalor Copeland was likely the first goat and cattle rancher here. Ranching would remain the primary use of the land you’re enjoying today until Texas Parks and Wildlife bought the land in 2011. Fences like this are remnants of the park’s ranching heritage. • Penelope Ray',

@@ -7,6 +7,7 @@ import {
 } from './ui/carousel'
 import './interactiveCarousel.css'
 import type { SupportedLanguages, TopicDatum } from '@/data/contentData'
+import parse from 'html-react-parser'
 
 export interface InteractiveCarouselProps extends Partial<TopicDatum> {
     language: SupportedLanguages
@@ -41,7 +42,7 @@ export const InteractiveCarousel = ({
                                 {source}
                             </cite>
                             <h1 className="text-white font-calderLc text-[20px] pt-4">
-                                {caption}
+                                {parse(caption)}
                             </h1>
                         </CarouselItem>
                     )
